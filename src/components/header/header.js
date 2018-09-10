@@ -4,7 +4,6 @@ import Link from 'gatsby-link'
 // Components
 import Logo from '../logo/Logo'
 
-import logo from '../../images/logo.svg'
 import styles from './header.module.scss' 
 
 
