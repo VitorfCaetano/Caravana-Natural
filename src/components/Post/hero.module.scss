@@ -1,0 +1,30 @@
+@import "../../scss/helpers/mixins.scss";
+
+.hero {
+  height: 260px;
+  max-width: 1450px;
+  width: 90%;
+  margin: 40px auto;
+  position: relative;
+
+  .image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .photographer {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  @include respond-to ('small') {
+    height: 400px;
+  }
+
+  @include respond-to ('medium') {
+    height: 600px;
+  }
+}
+

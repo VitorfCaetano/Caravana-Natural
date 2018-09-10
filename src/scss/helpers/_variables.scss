@@ -1,0 +1,19 @@
+$breakpoints: (
+  'small': (min-width: 768px),
+  'medium': (min-width: 1024px),
+  'large': (min-width: 1216px),
+  'huge': (min-width: 1366px),
+);
+
+
+.life_category {
+  background-color:rgb(11, 157, 238);
+}
+
+.adventure_category {
+  background-color:rgb(2, 176, 54);
+}
+
+.philosophy_category {
+  background-color:rgb(55, 55, 55);
+}

@@ -1,0 +1,23 @@
+.overlay {
+  background: linear-gradient(200deg, rgba(35, 35, 35, .2), rgba(108, 108, 108, 0.5));
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.photo_credits {
+  position: absolute;
+  right: 8px;
+  bottom: 5px;
+
+  img {
+    height: 24px;
+    width: 28px;
+  }
+}
+
+.outer {
+  height: 100%;
+}

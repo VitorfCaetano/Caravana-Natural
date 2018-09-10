@@ -1,0 +1,82 @@
+@import "../../scss/helpers/mixins.scss";
+
+.nav {
+  margin: 30px auto 30px auto;
+  width: 100%;
+  max-width: 1660px;
+
+  .brand {
+    height: 100%;
+    margin-bottom: 20px;
+    
+    display: flex;
+    align-items: center;
+
+    .nav_logo {
+      margin-left: 30px;
+
+      img {
+        height: 60px;
+        width: 58px;
+      }
+    }
+
+    .burger {
+      margin-right: 30px;
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .menu {
+    font-weight: 600;
+    text-align: center;
+
+    a {
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        background: #fff;
+        color: rgba(15, 15, 15, 0.95);
+      }
+    }
+  }
+
+  @include respond-to ('small') {
+    width: 93%;
+
+    .brand {
+      margin-bottom: 0;
+
+      .nav_logo, .burguer {
+        margin-left: 0;
+        
+        img {
+          height: 75px;  
+          width: 73px;
+        }
+      }
+    }
+  }
+
+  @include respond-to ('medium') {
+    .menu a {
+      margin-right: 40px;
+    }
+  }
+
+  @include respond-to ('large') {
+    .brand .nav_logo {
+      // margin-left: 50%;
+
+      img {
+        width: 92px;
+        height: 92px;
+      }
+    }
+
+    .menu a {
+      margin-right: 80px;
+    }
+  }
+}

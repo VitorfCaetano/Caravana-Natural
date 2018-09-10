@@ -1,0 +1,28 @@
+@import "../../scss/helpers/mixins.scss";
+
+.menu_categories_container {
+  border-bottom: 2px solid rgb(235, 235, 235);
+  height: 45px;
+  margin: 0 auto 15px auto;
+  max-width: 1450px;
+  width: 90%;
+
+  .menu_categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    }
+}
+
+.philosophy {
+  color: rgb(35, 35, 35);
+}
+
+.adventure {
+  color: rgb(2, 176, 54);
+}
+
+.life {
+  color: rgb(11, 157, 238);
+}

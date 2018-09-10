@@ -1,0 +1,60 @@
+@import "../../scss/helpers/mixins.scss";
+
+.card {
+  border-radius: 5px;
+  border-bottom: 4px solid rgb(2, 176, 54);
+  margin: 100px auto 0 auto;
+  padding: 0 25px 20px;
+  position: relative;  
+  width: 100%;
+
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.1), 
+    0 3px 10px -4px rgba(0, 0, 0, 0.2);
+  
+  .card_picture {
+    height: 90px;
+    width: 140px;
+    margin: 0 auto ;
+    position: relative;
+    top: -60px;
+    
+    img {
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+  
+      box-shadow: 0 16px 38px -10px rgba(0, 0, 0, 0.2), 
+        2px 4px 25px -5px rgba(0, 0, 0, 0.12), 
+        -2px 4px 25px -5px rgba(0, 0, 0, 0.12);
+    }
+  }
+  
+  .contributor_info {
+    text-align: center;
+    margin-top: 10px;
+  
+    .name {
+      font-size: 24px;
+    }
+  
+    .profession {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @include respond-to ('small') {
+    flex-basis: 40%;
+  }
+
+  @include respond-to ('medium') {
+    .contributor_info .name {
+      font-size: 26px;
+    }
+
+    .contributor_info .description {
+      font-size: 17px;
+    }
+  }
+}
+
