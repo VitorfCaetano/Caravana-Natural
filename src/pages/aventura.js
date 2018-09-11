@@ -4,10 +4,12 @@ import Categories from '../components/category/Categories'
 import Articles from '../components/article/Articles';
 
 const Adventure = ({data}) => {
-  const posts = [];
-  if(data.allContentfulPost.edges) {
+  
+  let posts = [];
+  if(data.allContentfulPost) {
     posts = data.allContentfulPost.edges;
   }
+
 
   return (
     <div>

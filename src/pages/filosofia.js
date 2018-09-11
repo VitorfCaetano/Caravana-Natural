@@ -5,8 +5,8 @@ import Articles from '../components/article/Articles';
 
 const Philosophy = ({data}) => {
 
-  const posts = [];
-  if(data.allContentfulPost.edges) {
+  let posts = [];
+  if(data.allContentfulPost) {
     posts = data.allContentfulPost.edges;
   }
 
