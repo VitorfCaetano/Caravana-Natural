@@ -7,21 +7,19 @@ import Articles from '../components/article/Articles';
 
 
 const IndexPage = ({data}) => {
-  const allPosts = []
-  if(data.allContentfulPost.edges) {
-    allPosts = data.allContentfulPost.edges;
-  }
-
-  const mainPost = allPosts[0].node;
+  const mainPost = data.allContentfulPost.edges[0].node;
   const { title, slug, category, createdAt, heroImage,
      heroLink, author } = mainPost;
   const image = heroImage.sizes;
   const categorySlug = category.slug;
 
-  const posts = []
-  if(allPosts.length > 1) {
-    posts = allPosts.slice(1);
-  }  
+  const posts = [];
+
+  const posts = data.allContentfulPost.edges.slice(1);
+  if(!posts) {
+    posts = [];
+  }
+    
 
   return (
     <div>
