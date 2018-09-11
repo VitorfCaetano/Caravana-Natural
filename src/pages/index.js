@@ -20,7 +20,7 @@ const IndexPage = ({data}) => {
 
   const posts = []
   if(allPosts.length > 1) {
-    posts = data.allContentfulPost.edges.slice(1);
+    posts = allPosts.slice(1);
   }  
 
   return (
