@@ -12,8 +12,8 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Caravana Natural é um blog para todos que querem discutir sobre filosofia, aventuras e os mistérios da vida.' },
+        { name: 'keywords', content: 'blog, natureza, filosifa, aventura, vida, tecnologia, caravana, caravana natural' },
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
