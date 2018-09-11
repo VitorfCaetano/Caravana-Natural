@@ -5,7 +5,10 @@ import Articles from '../components/article/Articles';
 
 const Philosophy = ({data}) => {
 
-  const posts = data.allContentfulPost.edges;
+  const posts = [];
+  if(data.allContentfulPost.edges) {
+    posts = data.allContentfulPost.edges;
+  }
 
   return (
     <div>

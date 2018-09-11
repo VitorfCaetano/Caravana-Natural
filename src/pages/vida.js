@@ -4,7 +4,10 @@ import Categories from '../components/category/Categories'
 import Articles from '../components/article/Articles';
 
 const Life = ({data}) => {
-  const posts = data.allContentfulPost.edges;
+  const posts = [];
+  if(data.allContentfulPost.edges) {
+    posts = data.allContentfulPost.edges;
+  }
 
   return (
     <div>
